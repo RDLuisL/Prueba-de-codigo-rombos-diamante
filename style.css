@@ -1,0 +1,67 @@
+
+:root {
+    --s: 100px;     /*tamaño */
+    --m: ;       /*margen*/
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: 100%;
+    
+}
+
+img {
+    width: 200px;
+}
+
+.edificios {
+    position: absolute;
+    transform: translate(0px, 100px);
+}
+
+.naval {
+    position: absolute;
+    transform: translate(110px, 180px);
+    z-index: 2;
+}
+
+
+.residencial {
+    position: absolute;
+    transform: translate(-130px, 170px);
+    width: 181px;
+    z-index: 3;
+}
+
+.institucional {
+    position: absolute;
+    transform: translate(-30px, 230px);
+    z-index: 5;
+    width: 145px;
+}
+
+.ambiental {
+    position: absolute;
+    transform: translate(50px, 277px);
+    width: 129px;
+    z-index: 10;
+}
+
+img {
+    transition: filter 0.5s ease, width 0.5s ease, height 0.5s ease;  /* Añade una transición suave */
+  
+    filter: grayscale(90%);
+}
+
+
+.container > img:hover {
+    filter: grayscale(0%);
+    width:  230px;
+    height: 230px;
+    z-index: 20;
+    
+  }
