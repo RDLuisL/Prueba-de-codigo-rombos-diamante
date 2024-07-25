@@ -54,14 +54,20 @@ img {
 img {
     transition: filter 0.5s ease, width 1s ease, height 1s ease;  /* Añade una transición suave */
   
-    filter: grayscale(90%);
+   
 }
 
 
 .container > img:hover {
     filter: grayscale(0%);
     width:  230px;
-    height: 230px;
+    height: 200px;
     z-index: 20;
+    
+  }
+
+  .container img:not:hover {
+    filter: grayscale(100%);
+
     
   }
