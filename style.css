@@ -52,7 +52,7 @@ img {
 }
 
 img {
-    transition: filter 0.5s ease, width 0.5s ease, height 0.5s ease;  /* Añade una transición suave */
+    transition: filter 0.5s ease, width 1s ease, height 1s ease;  /* Añade una transición suave */
   
     filter: grayscale(90%);
 }
